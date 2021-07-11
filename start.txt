@@ -1,0 +1,6 @@
+atom .
+source ../venv/bin/activate
+flask run
+
+
+
