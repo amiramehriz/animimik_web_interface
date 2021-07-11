@@ -1,0 +1,44 @@
+body {
+  background-color: lightblue;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+form {
+  color: white;
+  text-align: center;
+}
+
+#logo{
+  width : 20%;
+  height: 20%
+}
+#image{
+
+}
+#video{
+
+}
+#label {
+  font-weight: bold;
+  color:darkblue;
+  font-family: verdana;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+#upload_button{
+  background-color: white;
+  border-radius: 12px;
+  padding: 12px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family:inherit;
+  color: darkblue
+}
+#form{
+width: 100%;
+
+}
