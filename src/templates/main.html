@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/static/styles.css" rel="stylesheet">
+
+  <title>Animimik</title>
+
+</head>
+
+<body>
+
+  <img id="logo" src="static/logo.png" alt="logo">
+
+  <form id="form" action ="/uploaded" method="POST" name = "form" enctype="multipart/form-data">
+
+    <label id="label" for="image">Select image:</label>
+    <br>
+    <input type="file" id="image" name="image" />
+    <br><br><br>
+    <label id="label" for="video">Select video:</label>
+    <br>
+
+    <input type="file" id="video" name="video" />
+    <br><br><br><br>
+
+
+    <input id="upload_button" type = "submit" class = "btn btn-primary" value ="upload" />
+  </form>
+</body>
+</html>
