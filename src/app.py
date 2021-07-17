@@ -35,4 +35,4 @@ def upload_file():
     uploaded_video = request.files['video']
     if uploaded_video.filename != '':
         uploaded_video.save("input/" + uploaded_video.filename)
-    return render_template("output.html",url="static/output/" + uploaded_video.filename)
+    return render_template("output.html",url="static/output/" + "output.mp4" )
