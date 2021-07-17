@@ -19,7 +19,11 @@ def after_request(response):
 
 @app.route("/", methods=['GET'])
 def index():
-  return render_template("main.html")
+  return render_template("firstPage.html")
+
+@app.route("/tomain")
+def to_main_page():
+    return render_template("main.html")
 
 
 @app.route("/uploaded", methods=["POST"])
