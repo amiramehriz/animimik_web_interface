@@ -21,12 +21,12 @@ def after_request(response):
 def index():
   return render_template("firstPage.html")
 
-@app.route("/tomain")
+@app.route("/main_page")
 def to_main_page():
     return render_template("main.html")
 
 
-@app.route("/uploaded", methods=["POST"])
+@app.route("/uploaded_page", methods=["POST"])
 def upload_file():
     uploaded_image= request.files['image']
     if uploaded_image.filename != '':
