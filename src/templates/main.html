@@ -15,22 +15,39 @@
 
 <body>
 
-  <img id="logo" src="static/logo.png" alt="logo">
+  <div class="intro-container">
+    <img id="logo" src="static/logo.png" alt="logo">
 
-  <form id="form" action ="/uploaded_page" method="POST" name = "form" enctype="multipart/form-data">
+    <div class="team-name">Animimik</div>
+    <div class="proj-info">
+      <p style="font-size: 20px;">
+      It does not matter how slowly you go, as long as you do not stop.
+      </p>
+      <p>
+      Let your picture moves through our application!
+      </p>
+    </div>
+  </div>
 
-    <label id="label" for="image">Select image:</label>
-    <br>
-    <input type="file" id="image" name="image" />
-    <br><br><br>
-    <label id="label" for="video">Select video:</label>
-    <br>
+  <div class="wizard">
 
-    <input type="file" id="video" name="video" />
-    <br><br><br><br>
+    <form id="form" action ="/uploaded" method="POST" name = "form" enctype="multipart/form-data">
 
+      <div class="pic-container">
+        <label class="label" for="image">Select image</label>
+        <br>
+        <input type="file" id="image" name="image" />
+      </div>
+      
+      <div class="vid-container">
+        <label class="label" for="video">Select video</label>
+        <br>
+        <input type="file" id="video" name="video" />
+      </div>
 
-    <input id="upload_button" type = "submit" class = "btn btn-primary" value ="upload" />
-  </form>
+      <input id="upload_button" type = "submit" class = "btn btn-primary btn-global" value ="upload" />
+    </form>
+  </div>
+
 </body>
 </html>
