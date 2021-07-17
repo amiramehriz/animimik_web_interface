@@ -1,44 +1,135 @@
+*{
+  opacity: 1;
+  transition: all 500ms linear;
+}
+
 body {
-  background-color: lightblue;
-  font-family: verdana;
-  font-size: 20px;
-}
+    font-family: verdana;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url('blue.jpg');
+    background-size: cover;
+  }
 
-form {
-  color: white;
-  text-align: center;
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(27, 18, 43, 0.836);
 }
+  
+  form {
+    color: white;
+    text-align: center;
+  }
+  
+  #logo{
+    width : 30%;
+    height: auto;
+    float: left;
+  }
 
-#logo{
-  width : 20%;
-  height: 20%
-}
-#image{
+  .team-name{
+    color: aliceblue;
+    padding-top: 12%;
+    /* padding-bottom: 8.5%; */
+    padding-left: 40%;
+    font-size: 60px;
+  }
 
-}
-#video{
+  .proj-info{
+    color: aliceblue;
+    /* padding-top: 12%; */
+    /* padding-bottom: 8.5%; */
+    font-size: 30px;
+    padding-left: 35%;
+  }
 
-}
-#label {
-  font-weight: bold;
-  color:darkblue;
-  font-family: verdana;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-#upload_button{
-  background-color: white;
-  border-radius: 12px;
-  padding: 12px 20px;
-  text-align: center;
-  font-size: 18px;
-  font-family:inherit;
-  color: darkblue
-}
-#form{
-width: 100%;
+  #image{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  #video{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .label {
+    font-weight: bold;
+    color:rgb(217, 217, 228);
+    font-family: verdana;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .btn-global{
+    background-color: white;
+    border-radius: 22px;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 18px;
+    /* font-family:inherit; */
+    color: darkblue;
+    transition: background-color 300ms linear;
+    margin: 12%;
+    cursor: pointer;
+  }
 
-}
+  .btn-global:hover{
+    background-color: rgb(198, 209, 233);
+    transition: background-color 300ms linear;
+  }
+
+  #form{
+  width: 100%;
+  
+  }
+
+  .intro-container{
+    /* row */
+    content: "";
+    display: table;
+    clear: both;
+    height: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5% 10% 4% 20%;
+    /* top, right, bottom, left */
+  }
+
+  .wizard{
+    /* row */
+    content: "";
+    display: table;
+    clear: both;
+    padding: 0% 20% 0% 20%;
+  }
+
+  .pic-container{
+    /* column */
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100px;
+  }
+
+  .vid-container{
+    /* column */
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 100px;
+  }
+
+  label {
+    cursor: pointer;
+    /* Style as you please, it will become the visible UI component. */
+ }
