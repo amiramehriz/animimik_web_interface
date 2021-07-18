@@ -22,12 +22,12 @@ body:before {
     z-index: -1;
     background-color: rgba(27, 18, 43, 0.836);
 }
-  
+
   form {
     color: white;
     text-align: center;
   }
-  
+
   #logo{
     width : 30%;
     height: auto;
@@ -91,7 +91,7 @@ body:before {
 
   #form{
   width: 100%;
-  
+
   }
 
   .intro-container{
@@ -119,6 +119,7 @@ body:before {
     width: 50%;
     padding: 10px;
     height: 100px;
+    display:inline-block;
   }
 
   .vid-container{
@@ -127,6 +128,7 @@ body:before {
     width: 50%;
     padding: 10px;
     height: 100px;
+    display:inline-block;
   }
 
   label {
