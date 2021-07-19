@@ -116,7 +116,7 @@ body:before {
   .pic-container{
     /* column */
     float: left;
-    width: 50%;
+    width: 90%;
     padding: 10px;
     height: 100px;
     display:inline-block;
@@ -126,7 +126,7 @@ body:before {
   .vid-container{
     /* column */
     float: left;
-    width: 50%;
+    width: 90%;
     padding: 10px;
     height: 100px;
     display:inline-block;

@@ -34,24 +34,24 @@
     <form id="form" action ="/uploaded_page" method="POST" name = "form" enctype="multipart/form-data">
 
       <div class="pic-container">
-        <label class="label" for="image">Select image</label>
-        <br>
+
+        <div class="row">
+        <label class="label" for="image">Upload image</label>
         <input type="file" id="image" name="image" />
 
 
-        <div class="row">
 
           <div class="column">
-            <img height="100px" id="img" src="static/img1.png" alt="image">
-            <input type="submit" name="img1" value="choose_img1">
+            <img height="100px" class="img" src="static/img1.png" alt="image">
+            <input type="radio" name="img_options" id="img1" value="img1"></input>
             </div>
           <div class="column">
-            <img height="100px" id="img" src="static/img2.png" alt="image">
-            <input type="submit" name="img2" value="choose_img2">
+            <img height="100px" class="img" src="static/img2.png" alt="image">
+            <input type="radio" name="img_options" id="img2" value="img2"></input>
             </div>
           <div class="column">
-            <img height="100px" id="img" src="static/img3.png" alt="image">
-            <input type="submit" name="img3" value="choose_img3">
+            <img height="100px" class="img" src="static/img3.png" alt="image">
+            <input type="radio" name="img_options" id="img3" value="img3"></input>
             </div>
 
         </div>
@@ -60,18 +60,19 @@
       </div>
 
       <div class="vid-container">
-        <label class="label" for="video">Select video</label>
-        <br>
-        <input type="file" id="video" name="video" />
-
 
         <div class="row">
+          <label class="label" for="video">Upload video</label>
+          <br>
+          <input type="file" id="video" name="video" />
+
+
           <div class="column">
             <video height="100px" id="vid" controls autoplay>
               <source src="static/1.mp4">
                 Your browser does not support the video tag.
               </video>
-              <input type="submit" name="vid1" value="choose_vid1">
+              <input type="radio" name="vid_options" id="vid1" value="vid1"></input>
               </div>
 
         <div class="column">
@@ -79,7 +80,7 @@
             <source src="static/3.mp4">
               Your browser does not support the video tag.
           </video>
-          <input type="submit" name="vid2" value="choose_vid2">
+          <input type="radio" name="vid_options" id="vid2" value="vid2"></input>
           </div>
 
         <div class="column">
@@ -87,7 +88,7 @@
           <source src="static/4.mp4">
             Your browser does not support the video tag.
         </video>
-        <input type="submit" name="vid3" value="choose_vid3">
+        <input type="radio" name="vid_options" id="vid3" value="vid3"></input>
         </div>
 
         </div>
@@ -95,7 +96,7 @@
 
       </div>
 
-      <input id="upload_button" type = "submit" class = "btn btn-primary btn-global" value ="upload" />
+      <input id="upload_button" type = "submit" class = "btn btn-primary btn-global" value ="Next" />
     </form>
   </div>
 
