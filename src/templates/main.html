@@ -38,9 +38,24 @@
         <br>
         <input type="file" id="image" name="image" />
 
-        <img id="img" src="static/img1.png" alt="image">
-        <img id="img" src="static/img2.png" alt="image">
-        <img id="img" src="static/img3.png" alt="image">
+
+        <div class="row">
+
+          <div class="column">
+            <img height="100px" id="img" src="static/img1.png" alt="image">
+            <input type="submit" name="img1" value="choose_img1">
+            </div>
+          <div class="column">
+            <img height="100px" id="img" src="static/img2.png" alt="image">
+            <input type="submit" name="img2" value="choose_img2">
+            </div>
+          <div class="column">
+            <img height="100px" id="img" src="static/img3.png" alt="image">
+            <input type="submit" name="img3" value="choose_img3">
+            </div>
+
+        </div>
+
 
       </div>
 
@@ -49,18 +64,33 @@
         <br>
         <input type="file" id="video" name="video" />
 
-        <video id="vid" controls autoplay>
-          <source src="static/1.mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video id="vid" controls autoplay>
-          <source src="static/3.mp4">
-            Your browser does not support the video tag.
-        </video>
-        <video id="vid" controls autoplay>
+
+        <div class="row">
+          <div class="column">
+            <video height="100px" id="vid" controls autoplay>
+              <source src="static/1.mp4">
+                Your browser does not support the video tag.
+              </video>
+              <input type="submit" name="vid1" value="choose_vid1">
+              </div>
+
+        <div class="column">
+          <video height="100px" id="vid" controls autoplay>
+            <source src="static/3.mp4">
+              Your browser does not support the video tag.
+          </video>
+          <input type="submit" name="vid2" value="choose_vid2">
+          </div>
+
+        <div class="column">
+        <video height="100px" id="vid" controls autoplay>
           <source src="static/4.mp4">
             Your browser does not support the video tag.
         </video>
+        <input type="submit" name="vid3" value="choose_vid3">
+        </div>
+
+        </div>
 
 
       </div>

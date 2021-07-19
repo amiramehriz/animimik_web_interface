@@ -120,6 +120,7 @@ body:before {
     padding: 10px;
     height: 100px;
     display:inline-block;
+    display: flex;
   }
 
   .vid-container{
@@ -129,6 +130,18 @@ body:before {
     padding: 10px;
     height: 100px;
     display:inline-block;
+    display: flex;
+  }
+
+  .row {
+    display: flex;
+
+  }
+
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+
   }
 
   label {
