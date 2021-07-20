@@ -140,6 +140,7 @@ body:before {
 
   .result-container{
     padding: 0% 25% 0% 25%;
+    margin-top: -3%;
   }
 
   .rate-container{
@@ -151,6 +152,15 @@ body:before {
     border-radius: 60px;
     padding: 20px;
     text-align: center;
+    font-size: 2.5vh; 
+    margin-top: 0; 
+    width: 30%; 
+    height: 7.9vh; 
+    margin-left: 10%; 
+  }
+
+  #first-rate{
+    margin-left: 300px;
   }
 
   .rad-container{
@@ -255,3 +265,50 @@ body:before {
     cursor: pointer;
     /* Style as you please, it will become the visible UI component. */
  }
+
+ /* for tablets and mobiles */
+@media screen and (max-width: 768px) {
+  *{
+    overflow: scroll;
+    overflow-x:hidden;
+  }
+
+  .intro-container {
+      width: 100%;
+      align-items: left;
+      height: 20%;
+  }
+
+  .proj-info{
+    width: 90vw;
+    margin-bottom: 0;
+    margin-right: 20vw;
+  }
+
+  .result-container{
+    height: 35%;
+    padding: 10%;
+    margin: 0;
+  }
+
+  .pic-container{
+    height: 45%;
+  }
+
+  .vid-result{
+    height: 180px;
+    width: 240px;
+  }
+
+  .rate-box{
+    width: 80vw;
+  }
+
+  #first-rate{
+    margin-left: 0px;
+  }
+
+  .warp{
+    width: 20vw;
+  }
+}
