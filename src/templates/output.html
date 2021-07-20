@@ -29,12 +29,12 @@
     </div>
 
   <div class="result-container">
-        <video class="vid-result" width="40%" height="30%" controls autoplay>
+        <video class="vid-result" height="25%" controls autoplay>
             <source src="{{originalURL}}">
             Your browser does not support the video tag.
         </video>
 
-        <video class="vid-result" width="40%" height="30%" controls autoplay>
+        <video class="vid-result" height="25%" controls autoplay>
             <source src="{{outputURL}}">
             Your browser does not support the video tag.
         </video>
@@ -44,40 +44,35 @@
         <div class="pic-container">
 
             <div class="row">
-                <p class="row rate-box" style="font-size: 2.5vh; margin-top: 0; width: 30%; height: 7.9vh; margin-left: 10%; ">
+                <p class="column rate-box" style="font-size: 2.5vh; margin-top: 0; width: 30%; height: 7.9vh; margin-left: 10%; ">
                     How do feel? ........ ..... ... 
                 </p>
     
-                <div class="column" style="margin-left: 300px;">
-                    <!-- <img height="100px" class="img" src="static/img1.png" alt="image"> -->
+                <div class="column" id="first-rate">
                     <label class="rad-container">1
                         <input type="radio" name="rate_options" id="rate1" value="rate1"></input>
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="column">
-                    <!-- <img height="100px" class="img" src="static/img2.png" alt="image"> -->
                     <label class="rad-container">2
                         <input type="radio" name="rate_options" id="rate2" value="rate2"></input>
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="column">
-                    <!-- <img height="100px" class="img" src="static/img3.png" alt="image"> -->
                     <label class="rad-container">3
                         <input type="radio" name="rate_options" id="rate3" value="rate3"></input>
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="column">
-                    <!-- <img height="100px" class="img" src="static/img3.png" alt="image"> -->
                     <label class="rad-container">4
                         <input type="radio" name="rate_options" id="rate4" value="rate4"></input>
                         <span class="checkmark"></span>
                     </label>
                 </div>
                 <div class="column">
-                    <!-- <img height="100px" class="img" src="static/img3.png" alt="image"> -->
                     <label class="rad-container">5
                         <input type="radio" name="rate_options" id="rate5" value="rate5"></input>
                         <span class="checkmark"></span>
@@ -90,7 +85,7 @@
         </div>
 
         <div class="warp">
-            <input id="submit_rate" type = "submit" class = "btn btn-primary btn-global" value ="submit" style="margin: 20%; width: 70px; l" />
+            <input id="submit_rate" type = "submit" class = "btn btn-primary btn-global" value ="submit" style="margin: 20%; width: 70px;" />
         </div>
     </form>
 
