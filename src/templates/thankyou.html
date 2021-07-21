@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="/static/styles.css" rel="stylesheet">
+
+  <title>Animimik</title>
+
+</head>
+
+<body>
+  <div class="intro-container" style="height: 10%;">
+        <img id="logo" src="static/logo.png" alt="logo" style="width: 20%;">
+
+        <div class="team-name" style="padding-top: 20%; font-size: 9vh;">Animimik</div>
+        <div class="proj-info" style="font-size: 2vh;">
+          <p style="font-size: 10vh;">
+          THANK YOU ❤️
+          </p>
+          <p> current results:</p>
+          {% for rating in current_rating %}
+          <p style="display:inline"> {{ rating }} &nbsp </p>
+          {% endfor %}
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
